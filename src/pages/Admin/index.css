@@ -1,0 +1,110 @@
+.siderStyle {
+    text-align: center;
+    /*line-height: 120px;*/
+    color: #fff;
+    background-color: #3ba0e9
+}
+
+.siderStyle .sider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #02213f;
+    padding: 12px;
+}
+
+.siderStyle .sider-header img {
+    width: 55px;
+}
+
+.siderStyle .sider-header span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.headerStyle {
+    text-align: center;
+    color: #aaa;
+    width: 100%;
+    height: 80px;
+    /*padding-inline: 50px;*/
+    /*paddingInline: 50,*/
+    padding: 0;
+    line-height: normal;
+    background-color: white;
+}
+
+.headerStyle .headerStyle-top {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    border-bottom: 1px solid green;
+    /*background-color: skyblue;*/
+    line-height: 40px;
+    text-align: right;
+}
+
+.headerStyle .headerStyle-bottom {
+    height: 50%;
+    /*background-color: orange;*/
+    display: flex;
+}
+
+.headerStyle .headerStyle-bottom .headerStyle-bottom-left {
+    width: 30%;
+    /*background-color: yellow;*/
+    position: relative;
+}
+
+.headerStyle .headerStyle-bottom .headerStyle-bottom-left-title {
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.headerStyle .headerStyle-bottom .headerStyle-bottom-left-arrow {
+    position: absolute;
+    border-top: 25px solid white;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    left: 50%;
+    transform: translate(-50%, -5px);
+}
+
+
+.headerStyle .headerStyle-bottom .headerStyle-bottom-right{
+    width: 70%;
+    line-height: 40px;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: right;
+}
+
+.headerStyle .headerStyle-bottom .headerStyle-bottom-right .headerStyle-bottom-right-time{
+    /*background-color: green;*/
+}
+.headerStyle .headerStyle-bottom .headerStyle-bottom-right .headerStyle-bottom-right-weather{
+    /*background-color: orange;*/
+    padding: 0 15px;
+}
+
+
+.contentStyle {
+    /*text-align: center;*/
+    /*height: 100%;*/
+    /*line-height: 120px;*/
+    color: black;
+    background-color: white;
+    border: 22px solid #eee;
+    box-sizing: border-box;
+}
+
+.footerStyle {
+    text-align: center;
+    color: #fff;
+    background-color: #7dbcea
+}
+
+
