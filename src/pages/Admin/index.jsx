@@ -25,11 +25,11 @@ function Admin(props) {
 
 
     return (
-        <Layout style={{height: '100%'}}>
+        <Layout style={{height: '100%', overflow:'hidden'}}>
             <LeftNav/>
             <Layout>
                 <HeaderInfo/>
-                <Content className='contentStyle'>
+                <Content className='contentStyle' style={{minHeight:550}}>
                     {/*{element}*/}
                     <Outlet/>
                 </Content>

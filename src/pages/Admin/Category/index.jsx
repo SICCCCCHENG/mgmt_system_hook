@@ -4,7 +4,7 @@ import {Button, Card, Table, Modal, Input, Form, message, Select} from 'antd'
 import {PlusOutlined, ArrowRightOutlined} from '@ant-design/icons';
 
 import {reqCategory, reqUpdateCateName, reqAddCategory} from "../../../api";
-import {PAGE_SIZE} from "../../../redux/constant";
+import {PAGE_SIZE} from "../../../utils/constant";
 import LinkButton from "../../../components/LinkButton";
 
 function Category(props) {

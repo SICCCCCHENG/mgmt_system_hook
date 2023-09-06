@@ -44,6 +44,13 @@ function LeftNav(props) {
 
     const location = useLocation()
 
+    let pathname
+    if (location.pathname.startsWith('/product')){
+        pathname = '/product'
+    }else {
+        pathname = location.pathname
+    }
+
     useEffect(() => {
         if (location.pathname === '/'){
             // console.log('location.pathname: ',location.pathname)
@@ -56,11 +63,11 @@ function LeftNav(props) {
 
     const menu = manageMenu(menuConfig)
 
-    const title = findTitle(menuConfig, location.pathname) || ''
+    const title = findTitle(menuConfig, pathname) || ''
 
     props.changeTitle(title)
 
-    const subMenu = findSubMenu(menuConfig, location.pathname) || {}
+    const subMenu = findSubMenu(menuConfig, pathname) || {}
 
     // console.log('subMenu: ', subMenu)
     function handleSelected(MenuItem) {
@@ -73,7 +80,7 @@ function LeftNav(props) {
 
 
     return (
-        <Sider className='siderStyle' style={{height: '100%'}}>
+        <Sider className='siderStyle' style={{minHeight: 700}}>
             <div className='sider-header'>
                 <div className='sider-header-img'><img src={warehouse} alt=""/></div>
                 <span>Products <br/> Management</span>
@@ -85,7 +92,7 @@ function LeftNav(props) {
                     width: '100%',
                     textAlign: 'left'
                 }}
-                selectedKeys={[location.pathname]}
+                selectedKeys={[pathname]}
                 defaultOpenKeys={[subMenu.key]}
                 mode="inline"
                 items={menu}

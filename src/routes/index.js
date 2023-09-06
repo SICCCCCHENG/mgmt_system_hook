@@ -8,6 +8,8 @@ import Role from '../pages/Admin/Role'
 import Bar from '../pages/Admin/Charts/Bar'
 import Line from '../pages/Admin/Charts/Line'
 import Pie from '../pages/Admin/Charts/Pie'
+import AddModifyForm from "../pages/Admin/Product/AddModifyForm";
+import Detail from '../pages/Admin/Product/Detail'
 
 export const route = [
     {
@@ -28,7 +30,20 @@ export const route = [
             },
             {
                 path: 'product',
-                element: <Product/>
+                element: <Product/>,
+            },
+            {
+                path: 'product',
+                children: [
+                    {
+                        path: 'detail',
+                        element: <Detail/>
+                    },
+                    {
+                        path: 'addmodify',
+                        element: <AddModifyForm/>
+                    }
+                ]
             },
             {
                 path: 'user',
